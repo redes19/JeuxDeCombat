@@ -1,18 +1,34 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-typedef enum {
-    IOP = "iop",
-    SACRIEUR = "sacrieur",
-    CRA = "cra",
-    XELOR = "xelor",
-    VESTIGE = "vestige",
+typedef enum
+{
+    IOP,
+    SACRIEUR,
+    CRA,
+    XELOR,
+    VESTIGE,
+    CLASS_COUNT,
+} Race;
+
+static const char *RaceNames[] = {
+    "Iop",
+    "Sacrieur",
+    "Cra",
+    "Xelor",
+    "Vestige",
+};
+
+typedef struct {
+    Race race;
+    int health;
 } Class;
 
-typedef struc {
+typedef struct {
     char name[20];
     Class class;
     int lvl;
+    int pointPersonnage;
 } Player;
 
 
