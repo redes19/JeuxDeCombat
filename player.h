@@ -19,16 +19,26 @@ static const char *RaceNames[] = {
     "Vestige",
 };
 
+typedef struct
+{
+    char name[20];
+    void (*skillFunction)();
+} Skill;
+
 typedef struct {
     Race race;
-    int health;
+    int baseHealth;
+    Skill *skills; // tableau dinamique des compétences
+    int MAX_SKILLS; // nombre de compétences total
 } Class;
 
 typedef struct {
     char name[20];
-    Class class;
+    Class *class;
+    Skill **unlockedSkills; // tableau dinamique des compétences débloquées
     int lvl;
-    int pointPersonnage;
+    int health;
+    int skillCount; // nombre de compétences débloquées
 } Player;
 
 
