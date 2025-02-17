@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/llori/Documents/github/projet-perso/JeuxDeCombat/cmake-build-debug",
-		"source" : "C:/Users/llori/Documents/github/projet-perso/JeuxDeCombat"
+		"build" : "C:/Users/Loris/Documents/GitHub/C/JeuxDeCombat/cmake-build-debug",
+		"source" : "C:/Users/Loris/Documents/GitHub/C/JeuxDeCombat"
 	},
 	"version" : 
 	{
