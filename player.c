@@ -43,7 +43,7 @@ Class *CreateClass(Race race) {
 }
 
 void CreateSkills() {
-    
+
 }
 
 
@@ -83,3 +83,16 @@ void CreatePlayer(Player *player)
     // ne pas oublier de montrer ses skills
 }
 
+void freeClass(Class *class) {
+    if (class) {
+        free(class->skills);
+        free(class);
+    }
+}
+
+void freePlayer(Player *player) {
+    if (player) {
+        free(player->unlockedSkills);
+        freeClass(player->class);
+    }
+}

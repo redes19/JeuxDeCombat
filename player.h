@@ -42,6 +42,10 @@ typedef struct {
 } Player;
 
 
-void ChooseClass();
+void CreatePlayer();
+
+// fonction free
+void freeClass(Class *class);
+void freePlayer(Player *player);
 
 #endif
