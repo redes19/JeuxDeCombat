@@ -3,7 +3,16 @@
 #include <string.h>
 #include "player.h"
 
+// function for skills
+void Mutilation() {
+    printf("Sacrifie un peu de sa vie pour augmenter sa puissance\n");
+}
 
+void Attirance() {
+    printf("Attire un ennemi vers soi\n");
+}
+
+// function for Player
 Class *CreateClass(Race race) {
     Class *newClass = malloc(sizeof(Class));
     newClass->race = race;

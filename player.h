@@ -23,6 +23,7 @@ typedef struct
 {
     char name[20];
     void (*skillFunction)();
+    int damage;
 } Skill;
 
 typedef struct {
